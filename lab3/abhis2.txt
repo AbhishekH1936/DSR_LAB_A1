@@ -1,0 +1,12 @@
+getwd()
+setwd("E:/DSR")
+getwd()
+xx=read.delim("bank-data.csv",sep=",")
+xx
+z=seq(1:10000)
+xx=cbind(xx,mob=z)
+xx
+
+write.csv(xx,"abhishek78.csv",row.names = FALSE)
+
+

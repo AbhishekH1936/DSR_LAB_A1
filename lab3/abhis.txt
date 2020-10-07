@@ -1,0 +1,15 @@
+buffTail <- c(10,1,37,5,12)
+gardenBee <- c(8,3,9,6,4)
+redTail <- c(18,9,12,4,8)
+carderBee <- c(8,27,6,32,23)
+honeyBee <- c(12,13,16,9,10)
+data2 <- data.frame(buffTail,gardenBee,redTail,carderBee,honeyBee)
+data2
+
+rownames(data2) <- c("Thistle","Vipers","Golden Rain","Yell","Green")
+data2
+
+str(data2)
+nrow(data2)
+ncol(data2)
+View(data2)
