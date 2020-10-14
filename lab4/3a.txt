@@ -1,0 +1,10 @@
+matbee=matrix(data=c(1,4,7,8,5,6,9,7,81,17,2,3,6,8,12,3,
+                     36,55,8,2,23,22,45,66,25),nrow = 5,ncol = 5)
+matbee
+plantnames=list("Thistle","Vipers","Golden_Rain","Yellow","Green")
+plantframe=as.data.frame(plantnames)
+str(plantframe)
+plantmat=as.matrix(plantframe)
+str(plantmat)
+rownames(matbee)=plantmat
+matbee

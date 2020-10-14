@@ -1,0 +1,18 @@
+getwd()
+setwd("E:/DSR")
+readx=read.csv("Churn_Modelling.csv")
+readx$EstimatedSalary
+min(readx$EstimatedSalary)
+max(readx$EstimatedSalary)
+income_group<-vector(mode="character",length=length(readx$EstimatedSalary))
+income_group
+income_group[readx$EstimatedSalary<10000]<-"Low"
+income_group
+income_group[readx$EstimatedSalary>=10000 & readx$EstimatedSalary < 100000]<-"middle"
+income_group[readx$EstimatedSalary>100000]<-"High"
+income_group
+spend<-factor(income_group,levels=c("Low","middle","High"),ordered=TRUE)
+spend
+bk<-cbind(readx,spend)
+bk
+write.csv(bk,'exportNewreadx.csv',row.names = FALSE)
