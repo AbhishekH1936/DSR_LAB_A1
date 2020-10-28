@@ -1,0 +1,10 @@
+install.packages("ggplot2")
+library(ggplot2)
+x=rnorm(100,mean=0,sd=1)
+y=x+rnorm(100,mean=0,sd=1)
+data2=as.data.frame(cbind(x,y))
+
+ggplot()+geom_point(data=data2,aes(x=x ,y=y), size=3,col='blue')+ggtitle('scatter')
+boxplot(data2$x,data2$y,Names=c('X','Y'),xlab='x',ylab='y',col='blue')
+
+

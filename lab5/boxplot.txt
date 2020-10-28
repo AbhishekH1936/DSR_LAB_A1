@@ -1,0 +1,12 @@
+Emp_id=c(seq(1:10))
+Emp_id
+salary=c(10000,22000,33000,45000,58000,65000,76000,89000,900000,100000)
+salary
+marital_status=c('bachelor','married','married','bachelor',
+                 'married','married','bachelor',
+                 'bachelor','married','bachelor')
+marital_status
+frame=data.frame(Emp_id,salary,marital_status)
+frame
+boxplot(salary~marital_status,data=frame)
+
