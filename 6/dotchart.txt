@@ -1,0 +1,5 @@
+library(ggplot2)
+head(mtcars)
+View(mtcars)
+dotchart(mtcars$mpg,labels=row.names(mtcars),cex=0.6,xlab="MPG",main = "Miles per gallon of car")
+
