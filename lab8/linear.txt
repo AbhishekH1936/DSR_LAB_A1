@@ -1,0 +1,17 @@
+x=c(50,53,54,55,56,59,62,65,67,71,72,74,75,76,79)
+y=c(122,118,128,121,125,136,144,142,149,161,167,168,162,171,175)
+data2=data.frame(x,y)
+data2
+data22=lm(y~x,data=data2)
+data22
+print(summary(data22))
+with(data2,plot(x,y))
+abline(lm(x~y))
+data22$coefficients
+new=fitted(data22)
+new
+plot(data2$x,data2$y,col='green')
+abline(lm(y~x),col='green')
+residuals(data22)
+abline(coef(data22),lty=1,col='blue')
+plot(data22,which=1)
